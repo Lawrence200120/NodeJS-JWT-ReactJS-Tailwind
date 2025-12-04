@@ -18,6 +18,7 @@ A full-stack web application demonstrating **JWT authentication** using **Node.j
 ## **Technologies Used**
 
 **Backend:**
+
 - Node.js
 - Express.js
 - JSON Web Tokens (JWT)
@@ -26,6 +27,7 @@ A full-stack web application demonstrating **JWT authentication** using **Node.j
 - dotenv for environment variables
 
 **Frontend:**
+
 - ReactJS
 - Tailwind CSS
 - Axios for API requests
@@ -36,54 +38,82 @@ A full-stack web application demonstrating **JWT authentication** using **Node.j
 ## **Project Structure**
 
 NodeJS-JWT-ReactJS-Tailwind/
+
 ├─ backend/ # Node.js + Express backend
-│ ├─ node_modules/
+
+│ ├─ node*modules/
+
 │ ├─ package-lock.json/
+
 │ ├─ package.json/
+
 │ ├─ index.js
+
 ├─ frontend/ # ReactJS frontend
-│ ├─ src/
-        |- _test_
+
+        │ ├─ src/
+
+        |- \_test*
+
         |- components
+
 │ ├─ public/
+
 │ ├─ package.json
+
 ├─ .gitignore
+
 └─ README.md
+
 ---
 
 ## **Getting Started**
 
 ### **1. Clone the repository**
+
 Open terminal
+
 git clone https://github.com/nithiyasoftwareengineer17-svg/NodeJS-JWT-ReactJS-Tailwind.git
+
 cd NodeJS-JWT-ReactJS-Tailwind
 
 ### **2. Backend setup**
+
 cd backend
+
 npm install
 
 PORT=5000
+
 MONGO_URI=mongodb://localhost:27017/NodeJs_CRUD
+
 JWT_SECRET=abcdef
 
-Start the backend server:  node index.js
+Start the backend server: node index.js
 
 ### **2. Frondend setup**
 
 cd../
-npm install
-Start the Frond End Application : npm run dev 
-Frondend Port :  http://localhost:5173/
 
+npm install
+
+Start the Frond End Application : npm run dev
+
+Frondend Port : http://localhost:5173/
 
 ### **3. Usage**
+
 Register a new user from the registration page.
+
 Login using registered credentials.
+
 Access protected routes (only visible to authenticated users).
+
 JWT is stored locally and used for authorization in API requests.
+
 Once Logged in the user then user can able to see Notes with (Add/Delete/Update)
 
-### **4. Dependencies** 
+### **4. Dependencies**
 
 ##Backend
 
@@ -111,7 +141,7 @@ axios
 
 tailwindcss version 3
 
-### **5. MongoDB Configuration** 
+### **5. MongoDB Configuration**
 
 Local MongoDB:
 
@@ -124,4 +154,3 @@ Use a connection string like:
 MONGO_URI=mongodb://127.0.0.1:27017/NodeJs_CRUD
 
 There are 2 collections are created : users for Login page and notes for Note page
-
