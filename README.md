@@ -154,3 +154,9 @@ Use a connection string like:
 MONGO_URI=mongodb://127.0.0.1:27017/NodeJs_CRUD
 
 There are 2 collections are created : users for Login page and notes for Note page
+
+### **6. Test case - Jest**
+
+Command for test case running : npm test
+
+Added test case for Login page (Login.test.jsx) under _test_  folder
