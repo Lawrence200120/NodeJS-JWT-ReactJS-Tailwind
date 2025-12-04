@@ -148,7 +148,7 @@ const Notes = () => {
                   <td className="py-2 px-2 border flex justify-center gap-2">
                     <button
                       onClick={() => handleEdit(note)}
-                      className="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600"
+                      className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
                     >
                       Edit
                     </button>
