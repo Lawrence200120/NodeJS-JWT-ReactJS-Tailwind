@@ -37,19 +37,18 @@ A full-stack web application demonstrating **JWT authentication** using **Node.j
 
 NodeJS-JWT-ReactJS-Tailwind/
 ├─ backend/ # Node.js + Express backend
-│ ├─ controllers/
-│ ├─ models/
-│ ├─ routes/
-│ ├─ .env
-│ ├─ server.js
+│ ├─ node_modules/
+│ ├─ package-lock.json/
+│ ├─ package.json/
+│ ├─ index.js
 ├─ frontend/ # ReactJS frontend
 │ ├─ src/
+        |- _test_
+        |- components
 │ ├─ public/
 │ ├─ package.json
 ├─ .gitignore
 └─ README.md
-
-
 ---
 
 ## **Getting Started**
@@ -73,7 +72,7 @@ Start the backend server:  node index.js
 
 cd../
 npm install
-npm run dev 
+Start the Frond End Application : npm run dev 
 Frondend Port :  http://localhost:5173/
 
 
@@ -82,8 +81,9 @@ Register a new user from the registration page.
 Login using registered credentials.
 Access protected routes (only visible to authenticated users).
 JWT is stored locally and used for authorization in API requests.
+Once Logged in the user then user can able to see Notes with (Add/Delete/Update)
 
-### **3. Dependencies**
+### **4. Dependencies** 
 
 ##Backend
 
@@ -111,5 +111,17 @@ axios
 
 tailwindcss version 3
 
+### **5. MongoDB Configuration** 
 
+Local MongoDB:
+
+Install MongoDB on your system.
+
+Run the MongoDB server (mongod).(Please test your mongoDb connection is stable or not: open MongoDB Shell)
+
+Use a connection string like:
+
+MONGO_URI=mongodb://127.0.0.1:27017/NodeJs_CRUD
+
+There are 2 collections are created : users for Login page and notes for Note page
 
