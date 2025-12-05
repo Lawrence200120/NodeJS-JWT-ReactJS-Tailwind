@@ -13,6 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
+      //Password should match
       if (password === confirmpassword) {
         await axios.post("http://localhost:5000/register", {
           username,

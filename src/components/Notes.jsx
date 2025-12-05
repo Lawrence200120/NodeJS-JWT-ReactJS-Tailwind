@@ -12,12 +12,14 @@ const Notes = () => {
     fetchNotes();
   }, []);
 
+  //Getting the notes data
   const fetchNotes = async () => {
     const res = await fetch(API_URL);
     const data = await res.json();
     setNotes(data);
   };
 
+  //Validate the title and description is required
   const validate = () => {
     let tempErrors = {};
     let isValid = true;
@@ -30,11 +32,11 @@ const Notes = () => {
       tempErrors.description = "Description is required";
       isValid = false;
     }
-
     setErrors(tempErrors);
     return isValid;
   };
 
+  //Form Submission with decide update or add the notes
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
@@ -54,16 +56,19 @@ const Notes = () => {
     }
   };
 
+  //Edit the Notes
   const handleEdit = (note) => {
     setForm({ title: note.title, description: note.description });
     setEditId(note._id);
   };
 
+  //Delete the notes
   const handleDelete = async (id) => {
     await fetch(`${API_URL}/${id}`, { method: "DELETE" });
     fetchNotes();
   };
 
+  //Reset the notes fields
   const handleReset = () => {
     setForm({ title: "", description: "" });
     setErrors({});
@@ -75,7 +80,7 @@ const Notes = () => {
       <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">
         Notes Dashboard
       </h2>
-
+    {/*form submission*/}
       <form
         onSubmit={handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md space-y-4 mb-6"

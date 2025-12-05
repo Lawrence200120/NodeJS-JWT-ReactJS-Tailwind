@@ -160,3 +160,7 @@ There are 2 collections are created : users for Login page and notes for Note pa
 Command for test case running : npm test
 
 Added test case for Login page (Login.test.jsx) under _test_  folder
+
+### **7. Documentation done
+
+### **8. Please import notes.json and users.josn to MongoDB before run the application
