@@ -51,11 +51,13 @@ NodeJS-JWT-ReactJS-Tailwind/
 
 ├─ frontend/ # ReactJS frontend
 
-        │ ├─ src/
+        │- src/
 
-        |- \_test*
+                |- _test_
 
-        |- components
+                |- assets
+
+                |- components
 
 │ ├─ public/
 
@@ -161,6 +163,6 @@ Command for test case running : npm test
 
 Added test case for Login page (Login.test.jsx) under _test_  folder
 
-### **7. Documentation done
+### **7. Documentation done**
 
-### **8. Please import notes.json and users.josn to MongoDB before run the application
+### **8. Please import notes.json and users.josn to MongoDB before run the application**
